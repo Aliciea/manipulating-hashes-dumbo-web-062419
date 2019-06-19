@@ -14,9 +14,22 @@ def first_challenge
   }
 
   #your code here
+  # contacts.each do |person, data|
+  #   puts "#{person}: #{data}"
 
-
-  #remember to return your newly altered contacts hash!
+  #   data.each do |attribute, value|
+  #   puts "#{attribute}: #{value}"
+     
+  #     if attribute == :favorite_icecream_flavors
+  #         value.each do |strawberry|
+  #           puts "#{strawberry}"
+  # contacts["Freddy Mercury"][:favorite_icecream_flavors].shift("strawberry")
+  contacts.each do |person, data|
+              puts "#{person}: #{data}"
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if("strawberry")
+ #remember to return your newly altered contacts hash!
   contacts
 end
+ 
+   
 
